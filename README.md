@@ -1,5 +1,5 @@
 # ionic-imsmart-starter
- 
+
 ## To Start an Ionic Project for imSMART
 
 ### Install the Latest Version of Ionic
@@ -40,13 +40,10 @@ The current version of the NPM module (6.0.1) does not support Ivy. In the tscon
 
 Ionic 5 currently has issues with ion-icons displaying on imSMART. Update the package.json to downgrade to the latest version of Ionic 4.
 
-In the package.json file, delete the following lines from "dependencies" (leave any other properties)
+In the package.json file, delete the following line from "dependencies" (leave any other properties)
 
 ```json
 "dependencies": {
-    "@ionic-native/core": "^5.0.7",
-    "@ionic-native/splash-screen": "^5.0.0",
-    "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^5.0.0",
   }
 ```
@@ -55,9 +52,11 @@ Add the following line back (leave any other properties)
 
 ```json
 "dependencies": {
-    "@ionic/angular":"4.11.10"
+    "@ionic/angular":"4.11.10",
   }
 ```
+
+Note: After this only the icons of ion-icons 4 will be available.
 
 ### Install the imSMART NPM Module
 
@@ -74,3 +73,23 @@ In the directory you created by ionic, you will install the imsmart repository. 
 ```console
 npm install
 ```
+
+### Update index.html to run inside the imSmart App
+
+In the index.html file, delete the following line (leave any other properties)
+
+```html
+<base href="/" />
+```
+
+Add the following line back (leave any other properties)
+
+```html
+<base href="./" />
+```
+
+### To Run or Build the App
+
+`ionic serve` - to run the app on localhost.
+
+`ionic build --prod` - to build the app.
