@@ -26,16 +26,6 @@ A new directory with the name of the project will have been created. In this cas
 cd ./ionic-imsmart
 ```
 
-### Update TSConfig to use Angular 8
-
-The current version of the NPM module (6.0.1) does not support Ivy. In the tsconfig.json at the base of the directory created add the "enableIvy: false property (leave any other properties)
-
-```json
-"angularCompilerOptions": {
-    "enableIvy": false
-  }
-```
-
 ### OPTIONAL - Update package.json to use Ionic 4
 
 Ionic 5 currently has issues with ion-icons displaying on imSMART. Update the package.json to downgrade to the latest version of Ionic 4.
