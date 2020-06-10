@@ -86,7 +86,7 @@ Add the following line back (leave any other properties)
 declare var macs: any;
 ```
 
-2. Copy `macs.js`(Added to the repo) file under `src/assets/js/` folder. 
+2. Copy [`macs.js`](macs.js) file under `src/assets/js/` folder. 
 3. Add following line just before the `</head>` tag in the `index.html` file which is located in `src` folder.
 
 ```html
