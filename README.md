@@ -78,6 +78,21 @@ Add the following line back (leave any other properties)
 <base href="./" />
 ```
 
+### Using macs inside the imSmart App
+
+1. Create a `declarations.d.ts` inside the `src` folder. And add following line to it.
+
+```js
+declare var macs: any;
+```
+
+2. Copy `macs.js`(Added to the repo) file under `src/assets/js/` folder. 
+3. Add following line just before the `</head>` tag in the `index.html` file which is located in `src` folder.
+
+```html
+<script type="text/javascript" src="assets/js/macs.js"></script>
+```
+
 ### To Run or Build the App
 
 `ionic serve` - to run the app on localhost.
