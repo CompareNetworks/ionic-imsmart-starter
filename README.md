@@ -93,6 +93,28 @@ declare var macs: any;
 <script type="text/javascript" src="assets/js/macs.js"></script>
 ```
 
+Usage: 
+```js
+var jsonObj = {
+    url : "https://postman-echo.com/post",
+    method: "POST",
+    isFileURL: false,
+    headers: {
+        'content-type': "application/json",
+    },
+    parameters: {
+        foo1: "bar1",
+        foo2: "bar2"
+    },
+    body: {
+        foo1: "bar1",
+        foo2: "bar2"
+    }
+};
+
+macs.loadURLRequest (json, function(result) { alert(”Success”); }, function(result) { alert(”Failure”); });
+```
+
 ### To Run or Build the App
 
 `ionic serve` - to run the app on localhost.
