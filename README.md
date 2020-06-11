@@ -78,6 +78,13 @@ Add the following line back (leave any other properties)
 <base href="./" />
 ```
 
+### Define the global variable
+Add the following line at the end of the `polyfills.ts` which is under `src` folder.
+
+```js
+(window as any).global = window;
+```
+
 ### Using macs inside the imSmart App
 
 1. Create a `declarations.d.ts` inside the `src` folder. And add following line to it.
